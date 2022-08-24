@@ -1,5 +1,5 @@
 {
-    "name": "syntro/silverstripe-module",
+    "name": "syntro/silverstripe-elemental-image",
     "description": "Silverstripe module.",
     "type": "silverstripe-vendormodule",
     "authors": [
@@ -10,7 +10,8 @@
     ],
     "require": {
         "silverstripe/cms": "^4",
-        "silverstripe/framework": "^4"
+        "silverstripe/framework": "^4",
+        "syntro/silverstripe-elemental-elementals": "^1"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0",

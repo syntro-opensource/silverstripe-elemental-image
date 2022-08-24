@@ -26,9 +26,9 @@ on:
       - master
 
 jobs:
-  silverstripe-module:
+  silverstripe-elemental-image:
     name: 🧰 Silverstripe Module Testsuite
-    uses: syntro-opensource/workflows/.github/workflows/silverstripe-module.yml@master
+    uses: syntro-opensource/workflows/.github/workflows/silverstripe-elemental-image.yml@master
     with:
       phpunit: false
       phpstan: false

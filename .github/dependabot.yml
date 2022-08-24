@@ -7,13 +7,6 @@ updates:
     schedule:
       interval: "daily"
     assignees: []
-  - package-ecosystem: npm
-    directory: "/"
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: Bump
-    assignees: []
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
