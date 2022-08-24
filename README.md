@@ -11,7 +11,7 @@ Silverstripe module template
 
 
 ## Introduction
-Template repository for a Silverstripe Module.
+Adds an image block for the elemental editor
 
 ## Installation
 
@@ -22,7 +22,4 @@ composer require syntro/silverstripe-elemental-image
 Thats it.
 
 ## Features
-> to be added
-
-## Documentation
-> to be added
+Currently, this module only provides an image block.
