@@ -126,6 +126,7 @@ class Image extends BaseElement
             )
         );
         $uploadfield
+            ->setAllowedMaxFileNumber(1)
             ->setFolderName('Uploads/Elements/Image');
         return $fields;
     }
