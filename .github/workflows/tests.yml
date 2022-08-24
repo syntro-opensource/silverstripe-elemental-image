@@ -1,0 +1,45 @@
+name: 🎭 Tests
+on:
+  push:
+    paths-ignore:
+      - .chglog/**
+      - .github/**
+      - '!.github/workflows/tests.yml'
+      - .editorconfig
+      - .gitattributes
+      - .gitignore
+      - .htaccess
+      - '**.md'
+    branches:
+      - master
+  pull_request:
+    paths-ignore:
+      - .chglog/**
+      - .github/**
+      - '!.github/workflows/tests.yml'
+      - .editorconfig
+      - .gitattributes
+      - .gitignore
+      - .htaccess
+      - '**.md'
+    branches:
+      - master
+
+jobs:
+  silverstripe-module:
+    name: 🧰 Silverstripe Module Testsuite
+    uses: syntro-opensource/workflows/.github/workflows/silverstripe-module.yml@master
+    with:
+      phpunit: false
+      phpstan: false
+      phpcs: false
+  silverstripe-client:
+    name: 📦 Client Testsuite
+    uses: syntro-opensource/workflows/.github/workflows/client.yml@master
+    with:
+      eslint: false
+      # eslint_dir: client/src/
+      # eslint_configfile: client/src/.eslintrc
+      stylelint: false
+      # stylelint_glob: client/src/**/*.scss
+      # stylelint_max-warnings:

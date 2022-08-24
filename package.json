@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "release": "git fetch && git-chglog -o CHANGELOG.md $([[ ! -z $npm_config_next ]] && echo \"--next-tag $npm_config_next\" )",
+    "watch": "webpack --watch --mode development",
+    "build": "webpack --mode production"
+  },
+  "name": "silverstripe-module",
+  "description": "Silverstripe module",
+  "author": "Matthias Leutenegger",
+  "license": "BSD-3-Clause",
+  "browserslist": [
+    "extends @syntro-opensource/browserslist-config-base"
+  ],
+  "dependencies": {
+    "@syntro-opensource/browserslist-config-base": "^1.0.0",
+    "@syntro-opensource/eslint-config-base": "^1.1.0",
+    "@syntro-opensource/webpack-config": "^1.3.2",
+  }
+}

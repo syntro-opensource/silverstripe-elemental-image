@@ -1,0 +1,11 @@
+extends: "@syntro-opensource/eslint-config-base"
+parser: "@babel/eslint-parser"
+parserOptions:
+  babelOptions:
+    presets:
+      - "@babel/preset-react"
+settings:
+  import/resolver:
+    alias:
+      map: []
+      extensions: ['.js', '.jsx']
